@@ -26,6 +26,9 @@
             a{
                 margin-left: 20px;
             }
+            a:hover{
+                text-decoration: underline;
+            }
            .mini-menu{
                border-radius: 50%;
                margin: 10px;
@@ -43,11 +46,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    img{
-                       width: 38%;
-                    }
-
                 }
 
     
@@ -96,76 +94,124 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        .search-bar{
-            border: 1px solid #ddd;
-            border-radius: 50px;
-            width: 600px;
-            height: 50px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            input{
-                border: none;
-                width: 80%;
+        .title-tag:hover{
+            cursor: pointer;
+        }
+        .search-section{
+            width: 100%;
+            padding-inline: 10px;
+           
+            .search-bar{
+                border: 1px solid #ddd;
+                border-radius: 50px;
+                min-width: 300px;
+                max-width: 600px;
+                height: 40px;
+                margin:auto;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon{
+                    height: 40px;
+                    display: flex;
+                }
+                img{
+                    width: 15px;
+                }
+               
+                input{
+                    background-color: transparent;
+                    border: none;
+                    font-size: 1rem;
+                    width: 80%;
+                    height: 35px;
+                    margin: 0 5px 0 5px;
+                    padding-left: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+            }
+            .search-bar:hover{
+                box-shadow: 0px 2px 12px 3px rgba(156,156,156,0.25);
+            }
+            .sub-search-btn{
                 height: 25px;
-                margin: 0 5px 0 5px;
+                margin: 50px;
+                display: flex;
+                justify-content: center;
+                box-sizing: content-box;
+    
+                button{
+                    border: none;
+                    background-color: #f8f9fa;
+                    
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+
+                }
+                button:hover{
+                    border: 1px solid #ddd;
+                }
+                button:nth-child(1){
+                    margin-right: 50px;
+                }
+            }
+    
+            .language-prefer{
+                display: flex;
+                justify-content: center;
+    
+                a, label{
+                    margin-right: 10px;
+                }
+                a{
+                    color: #1a0dab;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
             }
         }
-
-        .sub-search-btn{
-            height: 25px;
-            margin: 50px;
-            display: flex;
-            justify-content: center;
-
-            button{
-                border: none;
-                background-color: #f8f9fa;
-                padding: 15px;
-            }
-            button:nth-child(1){
-                margin-right: 50px;
-            }
         }
+        
 
-        .language-prefer{
-            display: flex;
-            justify-content: center;
-
-            a, label{
-                margin-right: 10px;
-            }
-        }
-    }
+       
 
     
     footer{
         width: 100%;
         height: 15vh;
-        background-color: #ddd;
+        background-color: #f2f2f2;
+        color: rgba(0,0,0,.54);
 
         .country{
             height: 7vh;
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #000;
-
+            border: .3px solid #ddd;
             span{
                 padding-left: 30px;
             }
         }
+       
 
         .sub-footer{
             height: 7vh;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             margin-left: 30px;
+            padding-left: 3%;
 
-            a{
+            a{  
+                color: rgba(0,0,0,.54);
                 margin-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
             }
         }
         
